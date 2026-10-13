@@ -1,7 +1,13 @@
 #!/bin/bash
 
-user_name="Yashwanth"
-hostname=$(hostname)
+server_name=$(hostname)
+current_user=$(whoami)
+app_directory="/app"
 
-echo "The current user name is: $user_name"
-echo "Present on the host with IP: $hostname"
+echo "===== SERVER INFORMATION ====="
+echo "Hostname: $server_name"
+echo "Current user: $current_user"
+echo "Application directory: $app_directory"
+
+echo "===== DISK USAGE ====="
+df -h /
