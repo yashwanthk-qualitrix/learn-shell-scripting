@@ -1,0 +1,6 @@
+echo "Home directory of the user: $HOME"
+echo "Name of the current user: $USER"
+echo "Name of the shell using: $SHELL"
+echo "Name of the path: $PATH"
+echo "Name of the present working directory: $PWD"
+echo "Name of the host: $HOSTNAME"

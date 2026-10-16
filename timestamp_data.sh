@@ -1,5 +1,6 @@
 #!/bin/bash
 
+second_from_1970=$(date +%s)
 date_format=$(date +%F)
 time_format_24=$(date +%T)
 time_format_12=$(date +%r)
@@ -18,7 +19,7 @@ custom_timestamp=$(date "+%Y-%m-%d_%H-%M-%S")
 custom_date=$(date "+Today is %A, %B %d %Y")  
 custom_date1=$(date "+%Y%m%d")
 
-
+echo "Seconds from Jan 1 1970: $second_from_1970"
 echo "Date Format: $date_format"
 echo "Date format in 24 hrs: $time_format_24"
 echo "Date format in 12 hrs with AM/PM: $time_format_12"
